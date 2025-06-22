@@ -52,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${cascadia.className} antialiased flex justify-center`}>
-        <div className="w-full max-w-2xl mx-5 my-5 text-sm">
+        <div className="w-full max-w-2xl mx-5 my-8 sm:my-16 text-sm">
           <Header />
           {children}
         </div>
