@@ -1,6 +1,6 @@
 "use client";
 
-import { Bars3Icon } from "@heroicons/react/16/solid";
+import { Bars3Icon, WrenchScrewdriverIcon } from "@heroicons/react/16/solid";
 import clsx from "clsx";
 import { useState } from "react";
 import UnderlinedLink from "../frequents/underlined-link";
@@ -10,7 +10,14 @@ export default function Header() {
 
   return (
     <div className="flex justify-between gap-5">
-      <h1 className="font-semibold text-lg">George Hum</h1>
+      <div className="flex flex-col">
+        <h1 className="font-semibold text-lg">George Hum</h1>
+        <p className="text-xs">
+          <WrenchScrewdriverIcon className="size-4 inline-block" /> (site under
+          construction)
+        </p>
+      </div>
+
       <div className="relative sm:static flex gap-5">
         <button
           className="sm:hidden btn btn-sm btn-square rounded-none"
@@ -36,7 +43,7 @@ export default function Header() {
               <UnderlinedLink href="#">Projects</UnderlinedLink>
             </li>
             <li>
-              <UnderlinedLink href="#">Work experience</UnderlinedLink>
+              <UnderlinedLink href="#">Career</UnderlinedLink>
             </li>
           </ul>
           <ul className="flex flex-col gap-1">
@@ -50,7 +57,13 @@ export default function Header() {
               <UnderlinedLink href="#">LinkedIn</UnderlinedLink>
             </li>
             <li>
-              <UnderlinedLink href="#">Contact</UnderlinedLink>
+              <UnderlinedLink href="#">X</UnderlinedLink>
+            </li>
+            <li>
+              <UnderlinedLink href="#">Instagram</UnderlinedLink>
+            </li>
+            <li>
+              <UnderlinedLink href="#">Contacts</UnderlinedLink>
             </li>
           </ul>
         </div>

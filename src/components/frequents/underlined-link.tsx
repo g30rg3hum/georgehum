@@ -1,11 +1,15 @@
+import clsx from "clsx";
+import Link from "next/link";
+
 interface Props {
   href: string;
+  className?: string;
   children: React.ReactNode;
 }
-export default function UnderlinedLink({ href, children }: Props) {
+export default function UnderlinedLink({ href, className, children }: Props) {
   return (
-    <a href={href} className="hover:underline">
+    <Link href={href} className={clsx("hover:underline", className)}>
       {children}
-    </a>
+    </Link>
   );
 }

@@ -1,3 +1,5 @@
+import UnderlinedLink from "@/components/frequents/underlined-link";
+import { StarIcon } from "@heroicons/react/16/solid";
 import Image from "next/image";
 
 export default function Home() {
@@ -6,23 +8,48 @@ export default function Home() {
       <div className="space-y-3">
         <p>
           I&apos;m a boy from the little island of Penang, located in Malaysia.
-          I love to enjoy life, experience new things, push limits, and pick
-          apart unfamiliar, novel challenges.
+          I love to enjoy life, experience new things, take risks, and push
+          limits.
         </p>
         <p>
-          I've completed a Bachelor's degree in Computer Science at The
-          University of Sheffield with a First Class Honours.
+          I studied in international schools in Penang leading up to my
+          Bachelor&apos;s degree in Computer Science at The University of
+          Sheffield, proudly graduating with a First Class Honours.
         </p>
         <p>
-          Solving real problems with code is just one of my many interests. I
-          love to play football, skate, lift, show off with cool calisthenics
-          tricks, boulder, make coffee and much more! I like to embark on and
-          test new hobbies or even just new ways of doing things.
+          Creating solutions ground-up to real problems with code is just one of
+          my many interests. I also like anything that involves movement and
+          outdoors. Mainly, I enjoy playing football, lifting, skating, and
+          bouldering.
         </p>
         <p>
-          This is my very own space where I can share my experiences (both
-          career and personal), projects and personal opinions on whatever I
-          feel like.
+          <StarIcon className="size-5 inline-block mr-2 text-yellow-500" />
+          At the time of writing, I&apos;m currently in the process of finding
+          my place in the real world. Staying in Sheffield,{" "}
+          <strong>
+            I&apos;m looking for any full-time role (e.g. in the sales/service
+            industry)
+          </strong>{" "}
+          to support myself, while I continue to build my skillset and
+          portfolio. Keep up with my latest projects and career (AND LIFE!)
+          ventures through my{" "}
+          <UnderlinedLink className="text-sky-500" href="#">
+            blog
+          </UnderlinedLink>{" "}
+          or social media (
+          <UnderlinedLink className="text-sky-500" href="#">
+            X
+          </UnderlinedLink>
+          ,{" "}
+          <UnderlinedLink className="text-sky-500" href="#">
+            LinkedIn
+          </UnderlinedLink>
+          , and{" "}
+          <UnderlinedLink className="text-sky-500" href="#">
+            Instagram
+          </UnderlinedLink>
+          )!
+          {/* TODO: implement links */}
         </p>
         <Image
           src="/images/collage.png"
