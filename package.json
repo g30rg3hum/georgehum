@@ -10,8 +10,13 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "@mdx-js/loader": "^3.1.0",
+    "@mdx-js/react": "^3.1.0",
     "@next/font": "^14.2.15",
+    "@next/mdx": "^15.3.5",
+    "@types/mdx": "^2.0.13",
     "clsx": "^2.1.1",
+    "gray-matter": "^4.0.3",
     "next": "15.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

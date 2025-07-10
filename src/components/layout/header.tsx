@@ -1,21 +1,28 @@
 "use client";
 
-import { Bars3Icon, WrenchScrewdriverIcon } from "@heroicons/react/16/solid";
+import { Bars3Icon } from "@heroicons/react/16/solid";
 import clsx from "clsx";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import UnderlinedLink from "../frequents/underlined-link";
+import Modal from "../frequents/modal";
 
 export default function Header() {
   const [navOpen, setNavOpen] = useState(true);
+  const [modal, setModal] = useState<HTMLDialogElement | null>(null);
+
+  const resumeModalId = "resume-modal";
+  useEffect(() => {
+    const modalElement = document.getElementById(
+      resumeModalId
+    ) as HTMLDialogElement;
+
+    setModal(modalElement);
+  }, []);
 
   return (
     <div className="flex justify-between gap-5">
       <div className="flex flex-col">
         <h1 className="font-semibold text-lg">George Hum</h1>
-        <p className="text-xs">
-          <WrenchScrewdriverIcon className="size-4 inline-block" /> (site under
-          construction)
-        </p>
       </div>
 
       <div className="relative sm:static flex gap-5">
@@ -34,36 +41,75 @@ export default function Header() {
         >
           <ul className="flex flex-col gap-1">
             <li>
-              <UnderlinedLink href="#">Me</UnderlinedLink>
+              <UnderlinedLink href="/">Me</UnderlinedLink>
             </li>
             <li>
-              <UnderlinedLink href="#">Blog</UnderlinedLink>
+              <UnderlinedLink href="/blog">Blog</UnderlinedLink>
             </li>
             <li>
-              <UnderlinedLink href="#">Projects</UnderlinedLink>
+              <UnderlinedLink href="/projects">Projects</UnderlinedLink>
             </li>
             <li>
-              <UnderlinedLink href="#">Career</UnderlinedLink>
+              <UnderlinedLink href="/career">Career</UnderlinedLink>
             </li>
           </ul>
           <ul className="flex flex-col gap-1">
             <li>
-              <UnderlinedLink href="#">Résumé</UnderlinedLink>
+              <UnderlinedLink href="#" onClick={() => modal?.showModal()}>
+                Résumé
+              </UnderlinedLink>
+              <Modal id={resumeModalId} title="Download my résumé">
+                <div className="space-y-3">
+                  <p>
+                    I have two résumés, one for tech and the other for more
+                    casual jobs. Pick your choosing!
+                  </p>
+                  <UnderlinedLink
+                    download
+                    href="/resumes/george_hum_resume_1.pdf"
+                    className="text-sky-500"
+                  >
+                    Tech
+                  </UnderlinedLink>
+                  {"   "}
+                  <UnderlinedLink
+                    download
+                    href="/resumes/george_hum_resume_2.pdf"
+                    className="text-sky-500"
+                  >
+                    Casual
+                  </UnderlinedLink>
+                </div>
+              </Modal>
             </li>
             <li>
-              <UnderlinedLink href="#">GitHub</UnderlinedLink>
+              <UnderlinedLink href="https://github.com/g30rg3hum" newTab>
+                GitHub
+              </UnderlinedLink>
             </li>
             <li>
-              <UnderlinedLink href="#">LinkedIn</UnderlinedLink>
+              <UnderlinedLink
+                href="https://www.linkedin.com/in/georgehum/"
+                newTab
+              >
+                LinkedIn
+              </UnderlinedLink>
             </li>
             <li>
-              <UnderlinedLink href="#">X</UnderlinedLink>
+              <UnderlinedLink href="https://x.com/g3e0rg3e" newTab>
+                X
+              </UnderlinedLink>
             </li>
             <li>
-              <UnderlinedLink href="#">Instagram</UnderlinedLink>
+              <UnderlinedLink
+                href="https://www.instagram.com/george_huum/"
+                newTab
+              >
+                Instagram
+              </UnderlinedLink>
             </li>
             <li>
-              <UnderlinedLink href="#">Contacts</UnderlinedLink>
+              <UnderlinedLink href="/contact">Contact</UnderlinedLink>
             </li>
           </ul>
         </div>
