@@ -1,4 +1,11 @@
-import { postFileNames } from "@/lib/constants";
+import { postFileNames, postsDirectory } from "@/lib/constants";
+import fs from "fs";
+import path from "path";
+import { compileMDX } from "next-mdx-remote/rsc";
+import SpaceBetween from "@/components/posts/space-between";
+import "./styles.css";
+
+const components = { SpaceBetween };
 
 export default async function PostPage({
   params,
@@ -6,9 +13,34 @@ export default async function PostPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const { default: Post } = await import(`@/posts/${slug}.mdx`);
+  const source = getPostSource(slug);
+  const { frontmatter, content } = await compileMDX<{
+    title: string;
+    date: string;
+  }>({
+    source: source,
+    components: components,
+    options: {
+      parseFrontmatter: true,
+    },
+  });
 
-  return <Post />;
+  return (
+    <div>
+      <div className="mb-3">
+        <h2 className="font-bold">{frontmatter.title}</h2>
+        <p className="text-xs">{frontmatter.date}</p>
+      </div>
+
+      {content}
+    </div>
+  );
+}
+
+function getPostSource(slug: string) {
+  const source = fs.readFileSync(path.join(postsDirectory, `${slug}.mdx`));
+
+  return source;
 }
 
 // only generates routes for posts that exist.
