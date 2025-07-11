@@ -3,9 +3,16 @@ import fs from "fs";
 import path from "path";
 import { compileMDX } from "next-mdx-remote/rsc";
 import SpaceBetween from "@/components/posts/space-between";
-import "./styles.css";
 
-const components = { SpaceBetween };
+interface ComponentProps {
+  children: React.ReactNode;
+}
+const components = {
+  SpaceBetween,
+  ul: ({ children }: ComponentProps) => (
+    <ul className="list-disc ml-3">{children}</ul>
+  ),
+};
 
 export default async function PostPage({
   params,
