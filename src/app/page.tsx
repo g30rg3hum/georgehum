@@ -1,5 +1,4 @@
 import UnderlinedLink from "@/components/frequents/underlined-link";
-import { StarIcon } from "@heroicons/react/16/solid";
 import Image from "next/image";
 
 export default function Home() {
