@@ -20,45 +20,30 @@ export default function Home() {
         outdoors. Mainly, I enjoy playing football, lifting, skating, and
         bouldering.
       </p>
+      <p>---</p>
       <p>
-        <StarIcon className="size-5 inline-block mr-2 text-yellow-500" />
-        At the time of writing, I&apos;m currently in the process of finding my
-        place in the real world. Staying in Sheffield,{" "}
-        <strong>
-          I&apos;m looking for any full-time role (e.g. in the sales/service
-          industry)
-        </strong>{" "}
-        to support myself, while I continue to break my way into tech, and build
-        my skillset and portfolio. Keep up with my latest projects and career
-        (AND LIFE!) ventures through my{" "}
-        <UnderlinedLink className="text-sky-500" href="/blog">
-          blog
-        </UnderlinedLink>{" "}
-        or social media (
-        <UnderlinedLink
-          className="text-sky-500"
-          href="https://x.com/g3e0rg3e"
-          newTab
-        >
-          X
+        📍 At the time of writing, I&apos;m currently on a mission to break my
+        way into tech in the real world. I&apos;ve only recently graduated, and
+        will be spending time with my wonderful family and friends at home in
+        Malaysia, until mid-September, when I will make my way back again to the
+        UK.
+      </p>
+      <p>
+        I&apos;m working hard to develop my own apps, to not only earn an income
+        by delivering real value to real users, but also beef up my
+        experience/résumé! Recently, I launched{" "}
+        <UnderlinedLink blue href="https://rsvpy.lol">
+          rsvpy
         </UnderlinedLink>
-        ,{" "}
-        <UnderlinedLink
-          className="text-sky-500"
-          href="https://www.linkedin.com/in/georgehum/"
-          newTab
-        >
-          LinkedIn
-        </UnderlinedLink>
-        , and{" "}
-        <UnderlinedLink
-          className="text-sky-500"
-          href="https://www.instagram.com/george_huum/"
-          newTab
-        >
-          Instagram
-        </UnderlinedLink>
-        )!
+        , an app for organising events, solving a real problem of inefficiency
+        in event management that I identified during my time at university.
+      </p>
+      <p>
+        Now, I&apos;ve been contracted to build a company website for a super
+        successful precision-engineering firm in Malaysia. Therefore, I&apos;m
+        working on that alongside a job hunt tracker app that will obviously
+        solve not only my own dilemma, but also help other struggling job
+        seekers in the same boat!
       </p>
       <Image
         src="/images/collage.png"
