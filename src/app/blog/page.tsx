@@ -20,21 +20,21 @@ export default function BlogPage() {
   // );
 }
 
-function getPosts() {
-  const posts = postFileNames
-    .filter((fileName) => fileName.endsWith(".mdx"))
-    .map((fileName) => {
-      // get content
-      const content = fs.readFileSync(path.join(postsDirectory, fileName));
+// function getPosts() {
+//   const posts = postFileNames
+//     .filter((fileName) => fileName.endsWith(".mdx"))
+//     .map((fileName) => {
+//       // get content
+//       const content = fs.readFileSync(path.join(postsDirectory, fileName));
 
-      // extract metadata
-      const { data: frontMatter } = matter(content);
+//       // extract metadata
+//       const { data: frontMatter } = matter(content);
 
-      return {
-        frontMatter,
-        slug: fileName.replace(/\.mdx$/, ""),
-      };
-    });
+//       return {
+//         frontMatter,
+//         slug: fileName.replace(/\.mdx$/, ""),
+//       };
+//     });
 
-  return posts;
-}
+//   return posts;
+// }
