@@ -25,7 +25,7 @@ export default function Home() {
         way into tech in the real world. I&apos;ve only recently graduated, and
         will be spending time with my wonderful family and friends at home in
         Malaysia, until mid-September, when I will make my way back again to the
-        UK.
+        UK and begin my application for the graduate VISA.
       </p>
       <p>
         I&apos;m working hard to develop my own apps, to not only earn an income
