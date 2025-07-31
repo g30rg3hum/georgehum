@@ -2,20 +2,22 @@ import { postFileNames, postsDirectory } from "@/lib/constants";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import UnderlinedLink from "@/components/frequents/underlined-link";
+// import UnderlinedLink from "@/components/frequents/underlined-link";
 
 export default function BlogPage() {
-  const posts = getPosts();
+  return <div>No blog posts at the moment!</div>;
 
-  return (
-    <div className="space-y-3">
-      {posts.map((post, index) => (
-        <UnderlinedLink key={index} href={`/blog/${post.slug}`}>
-          {post.frontMatter.title} ({post.frontMatter.date})
-        </UnderlinedLink>
-      ))}
-    </div>
-  );
+  // const posts = getPosts();
+
+  // return (
+  //   <div className="space-y-3">
+  //     {posts.map((post, index) => (
+  //       <UnderlinedLink key={index} href={`/blog/${post.slug}`}>
+  //         {post.frontMatter.title} ({post.frontMatter.date})
+  //       </UnderlinedLink>
+  //     ))}
+  //   </div>
+  // );
 }
 
 function getPosts() {
