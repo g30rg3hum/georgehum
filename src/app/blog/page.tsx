@@ -1,7 +1,7 @@
-import { postFileNames, postsDirectory } from "@/lib/constants";
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
+// import { postFileNames, postsDirectory } from "@/lib/constants";
+// import fs from "fs";
+// import path from "path";
+// import matter from "gray-matter";
 // import UnderlinedLink from "@/components/frequents/underlined-link";
 
 export default function BlogPage() {
