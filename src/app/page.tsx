@@ -40,9 +40,9 @@ export default function Home() {
       <p>
         Now, I&apos;ve been contracted to build a company website for a super
         successful precision-engineering firm in Malaysia. Therefore, I&apos;m
-        working on that alongside a job hunt tracker app that will obviously
-        solve not only my own dilemma, but also help other struggling job
-        seekers in the same boat!
+        currently working on that alongside a chrome extension AI tool that
+        summarises highlighted text - to help me speed up my reading (mainly
+        during my job search).
       </p>
       <Image
         src="/images/collage.png"
