@@ -8,6 +8,22 @@ export default function ProjectsPage() {
         <div>
           <h2 className="font-bold">
             <Image
+              src="/images/icons/smrsr.png"
+              width="20"
+              height="20"
+              alt="smrsr icon"
+              className="inline-block"
+            />{" "}
+            smrsr <span className="font-normal">(Aug 2025 - in progress)</span>{" "}
+          </h2>
+          <p>
+            Working on a Chrome extension AI tool that summarises highlighted
+            text on web pages.
+          </p>
+        </div>
+        <div>
+          <h2 className="font-bold">
+            <Image
               src="/images/icons/ktool.png"
               width="20"
               height="20"
