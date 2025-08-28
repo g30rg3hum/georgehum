@@ -2,22 +2,22 @@
 
 import { Bars3Icon } from "@heroicons/react/16/solid";
 import clsx from "clsx";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import UnderlinedLink from "../frequents/underlined-link";
-import Modal from "../frequents/modal";
+// import Modal from "../frequents/modal";
 
 export default function Header() {
   const [navOpen, setNavOpen] = useState(true);
-  const [modal, setModal] = useState<HTMLDialogElement | null>(null);
+  // const [modal, setModal] = useState<HTMLDialogElement | null>(null);
 
-  const resumeModalId = "resume-modal";
-  useEffect(() => {
-    const modalElement = document.getElementById(
-      resumeModalId
-    ) as HTMLDialogElement;
+  // const resumeModalId = "resume-modal";
+  // useEffect(() => {
+  //   const modalElement = document.getElementById(
+  //     resumeModalId
+  //   ) as HTMLDialogElement;
 
-    setModal(modalElement);
-  }, []);
+  //   setModal(modalElement);
+  // }, []);
 
   return (
     <div className="flex justify-between gap-5">
@@ -35,13 +35,16 @@ export default function Header() {
         <div
           className={clsx(
             navOpen
-              ? "absolute sm:static block top-10 right-0 p-3 sm:p-0 bg-base-200 flex gap-6 sm:bg-transparent"
+              ? "absolute sm:static block top-10 right-0 p-5 sm:p-0 bg-base-200 flex gap-6 sm:bg-transparent"
               : "hidden sm:flex gap-6"
           )}
         >
           <ul className="flex flex-col gap-1">
             <li>
-              <UnderlinedLink href="/">Me</UnderlinedLink>
+              <UnderlinedLink href="/">Home</UnderlinedLink>
+            </li>
+            <li>
+              <UnderlinedLink href="/who">Who?</UnderlinedLink>
             </li>
             <li>
               <UnderlinedLink href="/blog">Blog</UnderlinedLink>
@@ -55,10 +58,10 @@ export default function Header() {
           </ul>
           <ul className="flex flex-col gap-1">
             <li>
-              <UnderlinedLink href="#" onClick={() => modal?.showModal()}>
+              <UnderlinedLink href="/resumes/george_hum_resume_1.pdf" download>
                 Résumé
               </UnderlinedLink>
-              <Modal id={resumeModalId} title="Download my résumé">
+              {/* <Modal id={resumeModalId} title="Download my résumé">
                 <div className="space-y-3">
                   <p>
                     I have two résumés, one for tech and the other for more
@@ -80,7 +83,7 @@ export default function Header() {
                     Casual
                   </UnderlinedLink>
                 </div>
-              </Modal>
+              </Modal> */}
             </li>
             <li>
               <UnderlinedLink href="https://github.com/g30rg3hum" newTab>

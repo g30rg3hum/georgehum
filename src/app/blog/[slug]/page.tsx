@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import { compileMDX } from "next-mdx-remote/rsc";
 import SpaceBetween from "@/components/posts/space-between";
+import { convertDateToString } from "@/lib/helpers/dates";
 
 interface ComponentProps {
   children: React.ReactNode;
@@ -24,6 +25,7 @@ export default async function PostPage({
   const { frontmatter, content } = await compileMDX<{
     title: string;
     date: string;
+    tags: string;
   }>({
     source: source,
     components: components,
@@ -32,11 +34,18 @@ export default async function PostPage({
     },
   });
 
+  const date = convertDateToString(new Date(frontmatter.date));
+
   return (
     <div>
       <div className="mb-3">
-        <h2 className="font-bold">{frontmatter.title}</h2>
-        <p className="text-xs">{frontmatter.date}</p>
+        <h2 className="font-bold">
+          {frontmatter.title}{" "}
+          <span className="font-normal">
+            {`{${date}}`}{" "}
+            {frontmatter.tags.split(",").map((tag) => `[${tag}] `)}
+          </span>
+        </h2>
       </div>
 
       {content}

@@ -1,56 +1,50 @@
+import InlineLogo from "@/components/frequents/inline-logo";
 import UnderlinedLink from "@/components/frequents/underlined-link";
-import Image from "next/image";
+import PostLink from "@/components/posts/post-link";
+import { getLatestPosts } from "@/lib/blog/get-posts";
+import Link from "next/link";
 
 export default function Home() {
+  const latestPosts = getLatestPosts();
+
   return (
-    <div className="space-y-3">
-      <p>
-        I&apos;m a boy from the little island of Penang, located in Malaysia. I
-        love to enjoy life, experience new things, take risks, and push limits.
-      </p>
-      <p>
-        I studied in international schools in Penang leading up to my
-        Bachelor&apos;s degree in Computer Science at The University of
-        Sheffield, proudly graduating with a First Class Honours.
-      </p>
-      <p>
-        Creating solutions ground-up to real problems with code is just one of
-        my many interests. I also like anything that involves movement and
-        outdoors. Mainly, I enjoy playing football, lifting, skating, and
-        bouldering.
-      </p>
-      <p>---</p>
-      <p>
-        📍 At the time of writing, I&apos;m currently on a mission to break my
-        way into tech in the real world. I&apos;ve only recently graduated, and
-        will be spending time with my wonderful family and friends at home in
-        Malaysia, until mid-September, when I will make my way back again to the
-        UK and begin my application for the graduate VISA.
-      </p>
-      <p>
-        I&apos;m working hard to develop my own apps, to not only earn an income
-        by delivering real value to real users, but also beef up my
-        experience/résumé! Recently, I launched{" "}
-        <UnderlinedLink blue href="https://rsvpy.lol">
-          rsvpy
-        </UnderlinedLink>
-        , an app for organising events, solving a real problem of inefficiency
-        in event management that I identified during my time at university.
-      </p>
-      <p>
-        Now, I&apos;ve been contracted to build a company website for a super
-        successful precision-engineering firm in Malaysia. Therefore, I&apos;m
-        currently working on that alongside a chrome extension AI tool that
-        summarises highlighted text - to help me speed up my reading (mainly
-        during my job search).
-      </p>
-      <Image
-        src="/images/collage.png"
-        alt="Collage of my hobbies"
-        height="300"
-        width="600"
-        className="mt-12 mx-auto"
-      />
+    <div className="space-y-6">
+      <div className="space-y-3">
+        <p>
+          Software engineer located in the UK, mainly working with TypeScript
+          and Next.js.
+        </p>
+        <p>
+          Conviction in and shipping{" "}
+          <Link href="https://sk8er.xyz" target="_blank">
+            <InlineLogo
+              src="/images/icons/sk8er.png"
+              alt="sk8er.xyz icon"
+              width={40}
+            />
+          </Link>
+          , the upcoming largest skateboarding social network.
+        </p>
+        <p>
+          Learn a little more about me{" "}
+          <UnderlinedLink blue href="/who">
+            here
+          </UnderlinedLink>{" "}
+          or hit me up{" "}
+          <UnderlinedLink blue href="/contact">
+            here
+          </UnderlinedLink>
+          .
+        </p>
+      </div>
+      {latestPosts.length !== 0 && (
+        <div className="space-y-3">
+          <p className="font-bold">What&apos;s been going on:</p>
+          {latestPosts.map((post) => (
+            <PostLink key={post.slug} postDetails={post} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }
