@@ -16,24 +16,20 @@ export default function Home() {
         </p>
         <p>
           I have fun coding and building, finding joy in looking for creative
-          ways to approach and digitally solve real problems. I can get stuck in
-          and time passes differently.
+          ways to approach and digitally solve real problems. I find it so easy
+          to get stuck in, and time passes by so quickly.
         </p>
         <p>
-          Away from all the technology, I also get euphoric over being active. I
-          love to lift, kick balls, smack balls, boulder, and skate.
-        </p>
-        <p>
-          Here&apos;s me in Madrid and my churros that I&apos;m boutta dip in
-          hot chocolate -{" "}
+          Away from all the technology, I keep sane by staying active. I love to
+          lift, play football, boulder, and skate.
         </p>
       </div>
 
       <Image
-        src="/images/personal/churros.png"
+        src="/images/personal/grad.png"
         height="250"
         width="250"
-        alt="Me with chocolate churros"
+        alt="Graduation photo"
         className="mx-auto"
       />
     </div>

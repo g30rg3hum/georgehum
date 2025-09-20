@@ -98,19 +98,19 @@ export default function Header() {
                 LinkedIn
               </UnderlinedLink>
             </li>
-            <li>
+            {/* <li>
               <UnderlinedLink href="https://x.com/g3e0rg3e" newTab>
                 X
               </UnderlinedLink>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <UnderlinedLink
                 href="https://www.instagram.com/george_huum/"
                 newTab
               >
                 Instagram
               </UnderlinedLink>
-            </li>
+            </li> */}
             <li>
               <UnderlinedLink href="/contact">Contact</UnderlinedLink>
             </li>
