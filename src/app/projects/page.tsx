@@ -26,7 +26,11 @@ export default function ProjectsPage() {
           <InlineLogo src="/images/icons/ktool.png" alt="K-TOOL icon" /> K-TOOL{" "}
           <span className="font-normal">
             {`{07-2025 -> in progress}`}{" "}
-            <UnderlinedLink newTab blue href="https://k-tool.vercel.app/">
+            <UnderlinedLink
+              newTab
+              blue
+              href="https://k-tool-revamp.vercel.app/"
+            >
               [progress]
             </UnderlinedLink>
           </span>
