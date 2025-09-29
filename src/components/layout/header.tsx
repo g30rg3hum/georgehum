@@ -39,7 +39,7 @@ export default function Header() {
               : "hidden sm:flex gap-6"
           )}
         >
-          <ul className="flex flex-col gap-1">
+          {/* <ul className="flex flex-col gap-1">
             <li>
               <UnderlinedLink href="/">Home</UnderlinedLink>
             </li>
@@ -55,10 +55,10 @@ export default function Header() {
             <li>
               <UnderlinedLink href="/career">Career</UnderlinedLink>
             </li>
-          </ul>
+          </ul> */}
           <ul className="flex flex-col gap-1">
             <li>
-              <UnderlinedLink href="/resumes/george_hum_resume_1.pdf" download>
+              <UnderlinedLink href="/pdfs/george_hum_resume_1.pdf" download>
                 Résumé
               </UnderlinedLink>
               {/* <Modal id={resumeModalId} title="Download my résumé">
@@ -111,9 +111,9 @@ export default function Header() {
                 Instagram
               </UnderlinedLink>
             </li> */}
-            <li>
+            {/* <li>
               <UnderlinedLink href="/contact">Contact</UnderlinedLink>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

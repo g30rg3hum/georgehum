@@ -1,21 +1,19 @@
 import InlineLogo from "@/components/frequents/inline-logo";
 import UnderlinedLink from "@/components/frequents/underlined-link";
-import PostLink from "@/components/posts/post-link";
-import { getLatestPosts } from "@/lib/blog/get-posts";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  const latestPosts = getLatestPosts();
-
   return (
     <div className="space-y-6">
       <div className="space-y-3">
         <p>
-          Software engineer located in the UK, mainly working with TypeScript
-          and Next.js.
+          Software engineer located in the UK, mainly working with{" "}
+          <b>TypeScript</b> and <b>Next.js</b>, with proficiency in{" "}
+          <b>Python</b> and <b>Java.</b>
         </p>
         <p>
-          Conviction in and shipping{" "}
+          Currently shipping{" "}
           <Link href="https://sk8er.xyz" target="_blank">
             <InlineLogo
               src="/images/icons/sk8er.png"
@@ -25,26 +23,156 @@ export default function Home() {
           </Link>
           , the upcoming largest skateboarding social network.
         </p>
+        <p>Also freelancing web development projects for businesses.</p>
         <p>
-          Learn a little more about me{" "}
-          <UnderlinedLink blue href="/who">
-            here
-          </UnderlinedLink>{" "}
-          or hit me up{" "}
-          <UnderlinedLink blue href="/contact">
-            here
-          </UnderlinedLink>
-          .
+          Please contact me at <b>hmw.geo@gmail.com</b> for any inquiries.
         </p>
       </div>
-      {latestPosts.length !== 0 && (
-        <div className="space-y-3">
-          <p className="font-bold">What&apos;s been going on:</p>
-          {latestPosts.map((post) => (
-            <PostLink key={post.slug} postDetails={post} />
-          ))}
-        </div>
-      )}
+      <div className="space-y-3">
+        <p>
+          <b>Projects:</b>
+        </p>
+        <p className="flex items-start gap-2">
+          <span>&#62;</span>
+          <span>
+            <Image
+              src="/images/icons/ktool.png"
+              height={60}
+              width={60}
+              alt="K-Tool Engineering logo"
+              className="inline-block"
+            />
+            : company website for precision engineering firm.{" "}
+            <UnderlinedLink href="https://ktoolengineering.com" newTab blue>
+              [url]
+            </UnderlinedLink>
+          </span>
+        </p>
+        <p className="flex items-start gap-2">
+          <span> &#62;</span>
+          <span>
+            <Image
+              src="/images/icons/rsvpy.png"
+              height={22}
+              width={22}
+              alt="rsvpy logo"
+              className="inline-block"
+            />
+            : software solution for efficient event management.{" "}
+            <UnderlinedLink href="https://rsvpy.lol" newTab blue>
+              [url]
+            </UnderlinedLink>
+          </span>
+        </p>
+        <p className="flex items-start gap-2">
+          <span> &#62;</span>
+          <span>
+            <Image
+              src="/images/icons/mobvis.png"
+              height={20}
+              width={20}
+              alt="mobVis logo"
+              className="inline-block align-sub"
+            />
+            : dissertation project on visualising mobility data for treating
+            multiple sclerosis.{" "}
+            <UnderlinedLink
+              href="https://github.com/g30rg3hum/mobVis"
+              newTab
+              blue
+            >
+              [url]
+            </UnderlinedLink>{" "}
+            <UnderlinedLink
+              href="/pdfs/final_dissertation_report.pdf"
+              newTab
+              download
+              blue
+            >
+              [pdf]
+            </UnderlinedLink>
+          </span>
+        </p>
+      </div>
+      <div className="space-y-3">
+        <p className="font-bold">Work experience:</p>
+        <p className="flex items-start gap-2">
+          <span>&#62;</span>
+          <span>
+            <Image
+              src="/images/icons/goodlord.jpeg"
+              alt="Goodlord logo"
+              width={20}
+              height={20}
+              className="inline-block"
+            />
+            : summer software engineering internship at UK prop-tech firm.{" "}
+            <UnderlinedLink href="https://www.goodlord.co/" newTab blue>
+              [url]
+            </UnderlinedLink>
+          </span>
+        </p>
+        <p className="flex items-start gap-2">
+          <span>&#62;</span>
+          <span>
+            <Image
+              src="/images/icons/nipponprinting.png"
+              alt="Nippon Printing logo"
+              width={20}
+              height={20}
+              className="inline-block"
+            />
+            : seasonal production and admin employee at Malaysian packaging and
+            printing company.
+          </span>
+        </p>
+      </div>
+      <div className="space-y-3">
+        <p className="font-bold">Academia:</p>
+        <p className="flex items-start gap-2">
+          <span>&#62;</span>
+          <span>
+            <Image
+              src="/images/icons/uos.png"
+              alt="University of Sheffield logo"
+              width={18}
+              height={18}
+              className="inline-block"
+            />
+            : 2025 Computer Science graduate at The University of Sheffield with
+            First-Class Honours (80% average).
+          </span>
+        </p>
+        <p className="flex items-start gap-2">
+          <span>&#62;</span>
+          <span>
+            <Image
+              src="/images/icons/uplands.png"
+              alt="The International School of Penang (Uplands) logo"
+              width={18}
+              height={18}
+              className="inline-block"
+            />
+            : completed The International Baccalaureate Diploma Programme (IBDP)
+            with 35/45 points (HL Maths AA, Computer Science, Economics: 6, 6,
+            6) (SL English, German, Film: 5, 5, 5) at The International School
+            of Penang (Uplands).
+          </span>
+        </p>
+        <p className="flex items-start gap-2">
+          <span>&#62;</span>
+          <span>
+            <Image
+              src="/images/icons/uplands.png"
+              alt="The International School of Penang (Uplands) logo"
+              width={18}
+              height={18}
+              className="inline-block"
+            />
+            : finished IGCSEs with 8 A*&apos;s and 2 A&apos;s.
+          </span>
+        </p>
+      </div>
     </div>
   );
 }
