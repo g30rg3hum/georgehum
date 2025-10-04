@@ -1,31 +1,22 @@
-import InlineLogo from "@/components/frequents/inline-logo";
 import UnderlinedLink from "@/components/frequents/underlined-link";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="space-y-6">
       <div className="space-y-3">
         <p>
-          Software engineer located in the UK, mainly working with{" "}
-          <b>TypeScript</b> and <b>Next.js</b>, with proficiency in{" "}
-          <b>Python</b> and <b>Java.</b>
+          Software engineer located in the UK, working with TypeScript
+          (alongside Next.js and React), Python, and Java.
         </p>
         <p>
-          Currently shipping{" "}
-          <Link href="https://sk8er.xyz" target="_blank">
-            <InlineLogo
-              src="/images/icons/sk8er.png"
-              alt="sk8er.xyz icon"
-              width={40}
-            />
-          </Link>
-          , the upcoming largest skateboarding social network.
+          2025 Computer Science graduate with experience in full-stack
+          development.
         </p>
-        <p>Also freelancing web development projects for businesses.</p>
+        <p>Looking for a full-time role in tech.</p>
         <p>
-          Please contact me at <b>hmw.geo@gmail.com</b> for any inquiries.
+          Please contact me at <b>hmw.geo@gmail.com</b> for any inquiries or
+          opportunities.
         </p>
       </div>
       <div className="space-y-3">
