@@ -23,7 +23,7 @@ export default function Home() {
             height={40}
             className="inline-block align-text-top"
           />
-          , a social platform for skateboard culture.
+          , a social platform leveraging and lifting skateboard culture.
         </p>
         <p>
           <b>Freelancing</b> web-development projects for various companies.
