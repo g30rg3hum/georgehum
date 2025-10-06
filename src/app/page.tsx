@@ -6,14 +6,31 @@ export default function Home() {
     <div className="space-y-6">
       <div className="space-y-3">
         <p>
-          Software engineer located in the UK, working with TypeScript
-          (alongside Next.js and React), Python, and Java.
+          <b>Software engineer</b> located in the UK, working with{" "}
+          <b>TypeScript</b> (alongside <b>Next.js</b> and <b>React</b>),{" "}
+          <b>Python</b>, and <b>Java.</b>
         </p>
         <p>
-          2025 Computer Science graduate with experience in full-stack
-          development.
+          <b>2025 Computer Science graduate</b> with experience in{" "}
+          <b>full-stack</b> development.
         </p>
-        <p>Looking for a full-time role in tech.</p>
+        <p>
+          Currently shipping passion project{" "}
+          <Image
+            src="/images/icons/sk8er.png"
+            alt="sk8er.xyz icon"
+            width={40}
+            height={40}
+            className="inline-block align-text-top"
+          />
+          , a social platform for skateboard culture.
+        </p>
+        <p>
+          <b>Freelancing</b> web-development projects for various companies.
+        </p>
+        <p>
+          All while hunting for <b>graduate and junior SWE opportunities.</b>
+        </p>
         <p>
           Please contact me at <b>hmw.geo@gmail.com</b> for any inquiries or
           opportunities.
@@ -33,7 +50,7 @@ export default function Home() {
               alt="K-Tool Engineering logo"
               className="inline-block"
             />
-            : company website for precision engineering firm.{" "}
+            : <b>company website</b> for precision engineering firm.{" "}
             <UnderlinedLink href="https://ktoolengineering.com" newTab blue>
               [url]
             </UnderlinedLink>
@@ -49,7 +66,7 @@ export default function Home() {
               alt="rsvpy logo"
               className="inline-block"
             />
-            : software solution for efficient event management.{" "}
+            : <b>app</b> for efficient event management.{" "}
             <UnderlinedLink href="https://rsvpy.lol" newTab blue>
               [url]
             </UnderlinedLink>
@@ -65,8 +82,8 @@ export default function Home() {
               alt="mobVis logo"
               className="inline-block align-sub"
             />
-            : dissertation project on visualising mobility data for treating
-            multiple sclerosis.{" "}
+            : <b>dissertation project</b> on visualising mobility data for
+            treating multiple sclerosis.{" "}
             <UnderlinedLink
               href="https://github.com/g30rg3hum/mobVis"
               newTab
@@ -97,7 +114,7 @@ export default function Home() {
               height={20}
               className="inline-block"
             />
-            : summer software engineering internship at UK prop-tech firm.{" "}
+            : <b>software engineering internship</b> at UK prop-tech firm.{" "}
             <UnderlinedLink href="https://www.goodlord.co/" newTab blue>
               [url]
             </UnderlinedLink>
@@ -113,8 +130,8 @@ export default function Home() {
               height={20}
               className="inline-block"
             />
-            : seasonal production and admin employee at Malaysian packaging and
-            printing company.
+            : seasonal <b>production and admin</b> employee at Malaysian
+            packaging and printing company.
           </span>
         </p>
       </div>
@@ -130,8 +147,8 @@ export default function Home() {
               height={18}
               className="inline-block"
             />
-            : 2025 Computer Science graduate at The University of Sheffield with
-            First-Class Honours (80% average).
+            : <b>2025 Computer Science graduate</b> at The University of
+            Sheffield with <b>First-Class Honours (80% average).</b>
           </span>
         </p>
         <p className="flex items-start gap-2">
@@ -144,10 +161,12 @@ export default function Home() {
               height={18}
               className="inline-block"
             />
-            : completed The International Baccalaureate Diploma Programme (IBDP)
-            with 35/45 points (HL Maths AA, Computer Science, Economics: 6, 6,
-            6) (SL English, German, Film: 5, 5, 5) at The International School
-            of Penang (Uplands).
+            : completed{" "}
+            <b>The International Baccalaureate Diploma Programme (IBDP)</b>
+            with 35/45 points{" "}
+            <b>(HL Maths AA, Computer Science, Economics: 6, 6, 6)</b> (SL
+            English, German, Film: 5, 5, 5) at The International School of
+            Penang (Uplands).
           </span>
         </p>
         <p className="flex items-start gap-2">
@@ -160,7 +179,7 @@ export default function Home() {
               height={18}
               className="inline-block"
             />
-            : finished IGCSEs with 8 A*&apos;s and 2 A&apos;s.
+            : finished <b>IGCSEs</b> with <b>8 A*&apos;s and 2 A&apos;s.</b>
           </span>
         </p>
       </div>

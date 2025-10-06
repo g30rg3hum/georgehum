@@ -58,7 +58,7 @@ export default function Header() {
           </ul> */}
           <ul className="flex flex-col gap-1">
             <li>
-              <UnderlinedLink href="/pdfs/george_hum_resume_1.pdf" download>
+              <UnderlinedLink href="/pdfs/georges_resume.pdf" download>
                 Résumé
               </UnderlinedLink>
               {/* <Modal id={resumeModalId} title="Download my résumé">
