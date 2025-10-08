@@ -6,34 +6,27 @@ export default function Home() {
     <div className="space-y-6">
       <div className="space-y-3">
         <p>
-          <b>Software engineer</b> located in the UK, working with{" "}
-          <b>TypeScript</b> (alongside <b>Next.js</b> and <b>React</b>),{" "}
-          <b>Python</b>, and <b>Java.</b>
+          Recently <b>graduated in Computer Science</b> with{" "}
+          <b>First-Class Honours.</b>
         </p>
         <p>
-          <b>2025 Computer Science graduate</b> with experience in{" "}
-          <b>full-stack</b> development.
+          Currently <b>located in the UK.</b>
         </p>
         <p>
-          Currently shipping passion project{" "}
-          <Image
-            src="/images/icons/sk8er.png"
-            alt="sk8er.xyz icon"
-            width={40}
-            height={40}
-            className="inline-block align-text-top"
-          />
-          , a social media platform leveraging and lifting skateboard culture.
+          With experience in full-stack app development using{" "}
+          <b>Next.js (React)</b>, <b>TypeScript</b>, <b>Python</b>, and{" "}
+          <b>Java</b>, I&apos;m currently exploring a pivot towards{" "}
+          <b>fintech and trading systems.</b>
         </p>
         <p>
-          <b>Freelancing</b> web-development projects for various companies.
+          Also <b>freelancing</b> web-development projects for companies.
         </p>
         <p>
-          All while hunting for <b>graduate and junior SWE opportunities.</b>
+          All while hunting for{" "}
+          <b>graduate and junior tech/engineering opportunities.</b>
         </p>
         <p>
-          Please contact me at <b>hmw.geo@gmail.com</b> for any inquiries or
-          opportunities.
+          Please contact me at <b>hmw.geo@gmail.com.</b>
         </p>
       </div>
       <div className="space-y-3">
