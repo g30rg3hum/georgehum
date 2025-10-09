@@ -155,8 +155,8 @@ export default function Home() {
               className="inline-block"
             />
             : completed{" "}
-            <b>The International Baccalaureate Diploma Programme (IBDP)</b>
-            with 35/45 points{" "}
+            <b>The International Baccalaureate Diploma Programme (IBDP)</b> with
+            35/45 points{" "}
             <b>(HL Maths AA, Computer Science, Economics: 6, 6, 6)</b> (SL
             English, German, Film: 5, 5, 5) at The International School of
             Penang (Uplands).
