@@ -43,7 +43,7 @@ export default function Home() {
                             alt="tairun logo"
                             className="inline-block"
                         />
-                        : AI agent workflow for streamline job search journey.
+                        : AI agent workflow to streamline job search journey.
                     </span>
                 </p>
                 <p className="flex items-start gap-2">
