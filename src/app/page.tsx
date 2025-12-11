@@ -6,11 +6,11 @@ export default function Home() {
         <div className="space-y-6">
             <div className="space-y-3">
                 <p>
-                    Recently <b>graduated in Computer Science</b> with{" "}
+                    <b>Graduated in Computer Science</b> with{" "}
                     <b>First-Class Honours.</b>
                 </p>
                 <p>
-                    Currently <b>located in the UK.</b>
+                    Currently <b>located in Sheffield, UK.</b>
                 </p>
                 <p>
                     Possess industry and personal project experience in
@@ -22,8 +22,8 @@ export default function Home() {
                     <b>graduate and junior roles in tech.</b>
                 </p>
                 <p>
-                    In the meantime, exploring and developing{" "}
-                    <b>algorithmic trading systems.</b>
+                    In the meantime, developing and freelancing{" "}
+                    <b>custom AI agents and workflows.</b>
                 </p>
                 <p>
                     Please contact me at <b>hmw.geo@gmail.com.</b>
@@ -32,6 +32,19 @@ export default function Home() {
             <div className="space-y-3">
                 <p>
                     <b>Projects:</b>
+                </p>
+                <p className="flex items-start gap-2">
+                    <span>&#62;</span>
+                    <span>
+                        <Image
+                            src="/images/icons/tairun.png"
+                            height={60}
+                            width={60}
+                            alt="tairun logo"
+                            className="inline-block"
+                        />
+                        : AI agent workflow for streamline job search journey.
+                    </span>
                 </p>
                 <p className="flex items-start gap-2">
                     <span>&#62;</span>
