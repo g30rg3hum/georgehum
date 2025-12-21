@@ -44,7 +44,14 @@ export default function Home() {
                             className="inline-block"
                         />
                         : <b>AI agent workflow</b> to streamline job search
-                        journey.
+                        journey.{" "}
+                        <UnderlinedLink
+                            href="https://github.com/g30rg3hum/tairun"
+                            newTab
+                            blue
+                        >
+                            [repo]
+                        </UnderlinedLink>
                     </span>
                 </p>
                 <p className="flex items-start gap-2">
